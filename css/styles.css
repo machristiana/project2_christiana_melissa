@@ -328,6 +328,56 @@ figcaption {
 }
 /* ******************************* END ABOUT PAGE STYLE***************/
 
+/* ************************** START PHOTOSHOP PAGE STYLE***************/
+.body-photoshop {
+ 	background: rgb(228, 207, 195);
+}
+
+figure img, .gallery-flex img, .ff-container, .ff-canvas {
+	max-width: 100%;
+}
+
+.ps-projects {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ps-title {
+  font-family: "Montserrat", sans-serif;
+  padding: 70px 5% 50px 5%;
+  color: rgb(121, 115, 81);
+  text-decoration: underline;
+}
+
+.ps1, .ps2, .ps3, .ps4, .ps5, .ps6, .ps7 {
+  background: rgb(207, 152, 134);
+  padding: 1.5%;
+}
+
+.ps4, .ps5, .ps6 {
+	width: 300px;
+}
+
+.caption-1,
+.caption-2,
+.caption-3,
+.caption-4 {
+  padding: 20px;
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(207, 152, 134);
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 120px;
+  color: white;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+/* ******************************* END PHOTOSHOP PAGE STYLE***************/
+
+
 
 
 
@@ -642,3 +692,105 @@ figcaption {
 }
 /*********************END MIN-WIDTH MEDIA QUERY 1120PX *****************/
 /************************** END ABOUT PAGE MEDIA QUERIES***************/
+
+
+/* ************************* START PHOTOSHOP PAGE MEDIA QUERIES*************** /
+/*********************START MIN-WIDTH MEDIA QUERY 450PX *****************/
+@media (min-width: 450px) {
+	.ps4,.ff-container.ff-ready.ff-inactive, .ff-canvas, .ps5, .ps6 {
+		width: auto;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 450PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 480PX *****************/
+@media (min-width: 480px) {
+	.ps2 {
+		position: relative;
+		top: -116px;
+	}
+
+	.ps2 {
+		margin-top: 34%;
+	}
+
+	.ps3 {
+		margin-top: -20%;
+	}
+
+	.ps5, .ps6 {
+		margin-top: 2%;
+	}
+
+	.ps7 {
+		margin-top: 4%;
+	}
+
+	.individual-project-3 {
+		margin-top: 37%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 480PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 700PX *****************/
+@media (min-width: 700px) {
+	.ps1, .ps2, .ps3, .ps4, .ps5, .ps6, .ps7 {
+	  padding: 1%;
+	}
+
+	.ps2, .ps3 {
+		margin-left: 2%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 700PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 830PX *****************/
+@media (min-width: 830px) {
+	a.ps4, .ff-container, .ff-overlay, .ff-canvas {
+		position: relative;
+		left: 25%;
+	}
+
+	.ps5 {
+		position: relative;
+		left: -25%;
+		margin-bottom: 4%;
+	}
+
+	.individual-project-2 {
+		margin-bottom: -12%;
+		margin-top: -6%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 830PX *****************/
+
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 900PX *****************/
+@media (min-width: 900px) {
+	.container-photoshop {
+		max-width: 900px;
+		margin: auto;
+		background: rgb(228, 207, 195);
+	}
+
+	.body-photoshop {
+		background-color: #f1f1e3;
+	}
+
+	a.ps4, .ff-container, .ff-overlay, .ff-canvas {
+		left: 48%;
+		top: -3%;
+	}
+
+	.ps5 {
+		left: -47%;
+    margin-bottom: -22%;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 900PX *****************/
+/* ************************* END PHOTOSHOP PAGE MEDIA QUERIES*************** /
