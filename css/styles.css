@@ -378,6 +378,83 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 /* ******************************* END PHOTOSHOP PAGE STYLE***************/
 
 
+/* ******************************* START ILLUSTRATOR PAGE STYLE***************/
+.container-illustrator {
+  background: rgb(228, 207, 195);
+}
+
+.ai-projects {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ai-projects img {
+	max-width: 100%;
+}
+
+.ai-title {
+  font-family: "Montserrat", sans-serif;
+  padding: 70px 3% 50px 3%;
+  color: rgb(121, 115, 81);
+  text-decoration: underline;
+}
+
+.ai1,
+.ai2,
+.ai3 {
+  background: rgb(207, 152, 134);
+	width: 250px;
+  padding: 1%;
+}
+
+.ai1,
+.ai2 {
+	margin-bottom: 2%;
+}
+
+.ai4,
+.ai5,
+.ai6,
+.ai7,
+.ai8 {
+  background: rgb(207, 152, 134);
+	width: 250px;
+  padding: 1%;
+}
+
+.ai4,
+.ai5,
+.ai6,
+.ai7 {
+	margin-bottom: 2%;
+}
+
+.caption-5,
+.caption-6 {
+  padding: 2%;
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(207, 152, 134);
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.caption-5 {
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+
+.caption-6 {
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+
+/* ******************************* END ILLUSTRATOR PAGE STYLE***************/
+
+
 
 
 
@@ -794,3 +871,75 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 
 /*********************END MIN-WIDTH MEDIA QUERY 900PX *****************/
 /* ************************* END PHOTOSHOP PAGE MEDIA QUERIES*************** /
+
+
+
+/* ******************** START ILLUSTRATOR PAGE MEDIA QUERIES*************** /
+/*********************START MIN-WIDTH MEDIA QUERY 400PX *****************/
+@media (min-width: 500px) {
+	.ai1, .ai2, .ai3, .ai4, .ai5, .ai6, .ai7, .ai8 {
+		width: auto;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 400PX *****************/
+
+/*********************START MIN-WIDTH MEDIA QUERY 525PX *****************/
+@media (min-width: 525px) {
+	.ai4, .ai5 {
+		margin: 0 1% 3%;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 525PX *****************/
+
+/*********************START MIN-WIDTH MEDIA QUERY 630PX *****************/
+@media (min-width: 630px) {
+	.ai7, .ai8 {
+		margin: 0 1% 0;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 630PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 700PX *****************/
+
+@media (min-width: 700px) {
+	.ai1, .ai2 {
+		margin-left: 2%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 700PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 775PX *****************/
+@media (min-width: 775px) {
+	.ai-project-2 {
+		max-width: 775px;
+		margin: auto;
+	}
+
+	.ai6 {
+		margin-bottom: 3%;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 775PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 1100PX *****************/
+@media (min-width: 1000px) {
+	.container-illustrator {
+		max-width: 1000px;
+		margin: auto;
+		background: rgb(228, 207, 195);
+	}
+
+	.body-illustrator {
+		background-color: #f1f1e3;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 1100PX *****************/
+/********************* END ILLUSTRATOR PAGE MEDIA QUERIES***************/
