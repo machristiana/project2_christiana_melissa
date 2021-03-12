@@ -455,6 +455,106 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 /* ******************************* END ILLUSTRATOR PAGE STYLE***************/
 
 
+/* *********************** START CONTACT PAGE STYLE*******************/
+
+.color-container {
+  background: rgb(228, 207, 195);
+}
+
+.contact-heading {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 15px;
+	padding-top: 92px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(121, 115, 81);
+  text-shadow: 1px 1px 1px white;
+}
+
+.contact-form {
+  background: rgb(228, 207, 195);
+  border: 18px solid rgb(171, 96, 79);
+  padding: 5px 0 5px 4%;
+	max-width: 100%;
+	margin: 2%;
+}
+
+.label {
+  display: block;
+  padding: 5px 0;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(121, 115, 81);
+  text-shadow: 1px 1px 1px white;
+}
+
+input {
+  padding: 5px 3%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(121, 115, 81);
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+  padding: 10px 3%;
+  border-radius: 4px;
+  border: 2px solid rgb(121, 115, 81);
+  font-family: "Montserrat", sans-serif;
+}
+
+.submit,
+.reset {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.submit input,
+.reset input {
+  padding: 10px;
+  margin: 8px 9px 10px 0;
+  background: rgb(228, 207, 195);
+  color: rgb(121, 115, 81);
+  text-shadow: .5px .5px .2px white;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.submit input:hover,
+.reset input:hover {
+  background: rgb(171, 96, 79);
+  color: rgb(239, 226, 223);
+  text-shadow: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact-me {
+	max-width: 100%;
+  background: rgb(207, 152, 134);
+  padding: 10%;
+	margin-top: 6%
+}
+
+.contact-greeting {
+  font-family: "Billie Bonnie", cursive;
+  font-weight: normal;
+  font-size: 60px;
+  color: rgb(121, 115, 81);
+}
+
+.contact-summary {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  text-shadow: .1px .1px .1px white;
+	font-size: 18px;
+  padding-top: 3%;
+}
+/* *********************** END CONTACT PAGE STYLE*******************/
+
+
+
 
 
 
@@ -663,6 +763,9 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 /* ************************* END HOME PAGE MEDIA QUERIES*************** /
 
 
+
+
+
 /* ************************* START ABOUT PAGE MEDIA QUERIES*************** /
 /*********************START MIN-WIDTH MEDIA QUERY 420PX *****************/
 @media (min-width: 420px) {
@@ -771,6 +874,10 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 /************************** END ABOUT PAGE MEDIA QUERIES***************/
 
 
+
+
+
+
 /* ************************* START PHOTOSHOP PAGE MEDIA QUERIES*************** /
 /*********************START MIN-WIDTH MEDIA QUERY 450PX *****************/
 @media (min-width: 450px) {
@@ -874,6 +981,8 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 
 
 
+
+
 /* ******************** START ILLUSTRATOR PAGE MEDIA QUERIES*************** /
 /*********************START MIN-WIDTH MEDIA QUERY 400PX *****************/
 @media (min-width: 500px) {
@@ -943,3 +1052,66 @@ figure img, .gallery-flex img, .ff-container, .ff-canvas {
 
 /*********************END MIN-WIDTH MEDIA QUERY 1100PX *****************/
 /********************* END ILLUSTRATOR PAGE MEDIA QUERIES***************/
+
+
+
+
+
+/* ********************* START CONTACT PAGE MEDIA QUERIES*************** /
+/*********************START MIN-WIDTH MEDIA QUERY 400PX *****************/
+@media (min-width: 400px) {
+	.contact-container {
+		max-width: 400px;
+		margin: auto;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 400PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 730PX *****************/
+@media (min-width: 730px) {
+	.contact-me {
+		margin-top: 14%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 730PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 850PX *****************/
+@media (min-width: 850px) {
+	.contact-form-section {
+		display: flex;
+		flex-direction: row-reverse;
+		margin-top: 6%;
+		margin-bottom: 15%;
+	}
+
+	.contact-container {
+		flex: 3;
+		margin-right: 3%;
+	}
+
+	.contact-box {
+		flex: 1;
+		width: auto;
+		align-self: center;
+    margin: 3%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 850PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 1000PX *****************/
+@media (min-width: 1000px) {
+	.body-contact {
+		background-color: rgb(191, 185, 160);
+	}
+
+	.color-container {
+		max-width: 1000px;
+		margin: auto;
+		background: rgb(228, 207, 195);
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 1000PX *****************/
+/*********************** END CONTACT PAGE MEDIA QUERIES*****************/
