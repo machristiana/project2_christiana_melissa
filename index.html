@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
-
 		<meta charset="utf-8">
+		<meta name="keywords" content="portfolio design" />
+    <meta name="description" content="Melissa Christiana's Portfolio Website showcases each of the projects she has created." />
 
-		<title></title>
+		<title>Melissa Christiana Portfolio</title>
 
-		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 
+		<!-- Meta Viewport Tag -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/70a4005e9d.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5NQRS1HVJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C5NQRS1HVJ');
+    </script>
+
+		<!-- jQuery Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -17,9 +42,103 @@
 
 	</head>
 
-	<body>
+	<body class="home-body site">
+		<header>
+			<button class="hamburger">&#9776;</button>
+		  <button class="cross">&#735;</button>
 
+	     <div class="heading">
+	       <h1 class="main">Melissa Christiana</h1>
+	       <div class="border">
+	         <div class="border-left"></div>
+	         <h1 class="title">PORTFOLIO</h1>
+	         <div class="border-right"></div>
+	       </div>
+	     </div>
 
+			<!-- **************** Mobile Nav Menu ************** -->
+			<nav class="menu">
+	       <ul>
+	         <li class="menu-item"><a href="index.html">Home</a></li>
+	         <li class="menu-item"><a href="about.html">About</a></li>
+	         <li class="menu-item"><a href="photoshop.html">Photoshop</a></li>
+	         <li class="menu-item"><a href="illustrator.html">Illustrator</a></li>
+	         <li class="menu-item"><a href="contact.html">Contact</a></li>
+	       </ul>
+	     </nav>
+
+			<div class="mobile-block"></div>
+
+			<!-- **************** Desktop Nav Menu ************** -->
+	     <nav class="desktop-menu">
+	       <ul>
+	         <li class="menu-item"><a href="index.html">Home</a></li>
+	         <li class="menu-item"><a href="about.html">About</a></li>
+	         <li class="menu-item"><a href="#">Portfolio <i class="fas fa-angle-down"></i></a>
+	           <ul class="sub-menu">
+	             <li class="menu-item"><a href="photoshop.html">Photoshop</a></li>
+	             <li class="menu-item"><a href="illustrator.html">Illustrator</a></li>
+	           </ul>
+	         </li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+				</ul>
+	     </nav>
+
+		</header>
+
+		<div class="container site-content">
+			<main>
+	      <section class="home-section">
+	        <h2 class="greeting">Welcome!</h2>
+
+	        <div class="images">
+	          <div class="individual-image">
+	            <img class="city-image" src="images/copenhagen.jpeg" alt="Copenhagen" title="Copenhagen"/>
+	          </div>
+
+	          <div class="individual-image">
+	            <img class="city-image" src="images/vienna.jpeg" alt="Vienna Restaurant" title="Vienna Restaurant"/>
+	          </div>
+
+	          <div class="individual-image">
+	            <img class="city-image" src="images/milan.jpeg" alt="Milan Flowers" title="Milan Flowers"/>
+	          </div>
+	        </div>
+	      </section>
+	    </main>
+		</div>
+
+		<!-- **************** Mobile Footer ************** -->
+		<footer class="footer-mobile">
+			<ul>
+	       <li class="menu-item"><a href="index.html">Home</a></li>
+	       <li class="menu-item"><a href="about.html">About</a></li>
+	       <li class="menu-item"><a href="photoshop.html">Photoshop</a></li>
+				<li class="menu-item"><a href="illustrator.html">Illustrator</a></li>
+	       <li class="menu-item"><a href="contact.html">Contact</a></li>
+	     </ul>
+
+			<p class="social-media-icons">
+      	<a class="social-media-icon2" href="https://www.linkedin.com/in/melissa-christiana-996b67106/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a class="social-media-icon1" href="mailto:machristiana1310@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+	    </p>
+	  </footer>
+
+		<!-- **************** Desktop Footer Menu ************** -->
+		<footer class="footer-desktop">
+	     <ul>
+	       <li class="menu-item" id="portfolio"><a href="index.html">Home</a></li>
+	       <li class="menu-item"><a href="about.html">About</a></li>
+	       <li class="menu-item"><a href="#">Portfolio</a></li>
+	       <li class="menu-item"><a href="contact.html">Contact</a></li>
+	     </ul>
+
+	     <p class="social-media-icons">
+	       <a class="social-media-icon2" href="https://www.linkedin.com/in/melissa-christiana-996b67106/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	       <a class="social-media-icon1" href="mailto:machristiana1310@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+	     </p>
+    </footer>
+
+		<script src="js/hamburger.js"></script>
 	</body>
-
 </html>
