@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'Conv_billie-bonnie';
+	src: url('fonts/billie-bonnie.eot');
+	src: local('☺'), url('fonts/billie-bonnie.woff') format('woff'), url('fonts/billie-bonnie.ttf') format('truetype'), url('fonts/billie-bonnie.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,3 +16,435 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/* *************************** START HAMBURGER MENU STYLE*************** */
+
+.hamburger {
+  background:none;
+  position:absolute;
+  top:0;
+  right:4%;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:white;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross {
+  background:none;
+  position:absolute;
+  top:0;
+  right:4%;
+  padding:7px 15px 0px 15px;
+  color:white;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu {
+	z-index:1000000;
+	font-weight:bold;
+	font-size:0.8em;
+	width:100%;
+	background:#f1f1f1;
+	position:absolute;
+	text-align:center;
+	font-size:12px;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: block;
+	padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+
+.menu li:hover {
+	display: block;
+	background:#ffffff;
+	padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+
+.menu ul li a {
+	text-decoration:none;
+	margin: 0px; color:#666;
+}
+
+.menu ul li a:hover {
+	color: #666;
+	text-decoration:none;
+}
+
+.menu a {
+	text-decoration:none;
+	color:#666;
+}
+
+.menu a:hover {
+	text-decoration:none;
+	color:#666;
+}
+
+/* ******************************* END HAMBURGER MENU STYLE*************** */
+
+/************************** START STICKY FOOTER ****************************/
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1;
+}
+/******************************* END STICKY FOOTER **********************/
+
+/* ******************************* START HOME PAGE STYLE*************** */
+
+.heading {
+  background: rgb(171, 96, 79);
+  text-align: center;
+  color: white;
+  padding: 13% 1% 2% 1%;
+}
+
+.main {
+  font-family: "Billie Bonnie", cursive;
+  font-size: 58px;
+  letter-spacing: .025em;
+  font-weight: normal;
+}
+
+.border {
+  display: inline-block;
+}
+
+.border-left,
+.border-right {
+  border-top: 2px solid white;
+  position: relative;
+}
+
+.border-left {
+  right: 84%;
+  top: 10px;
+  width: 76px;
+}
+
+.border-right {
+	left: 114%;
+  bottom: 21px;
+  width: 76px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 7px;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.mobile-block {
+	background: rgb(142, 136, 108);
+	height: 35px;
+}
+
+.home-section {
+  background: rgb(207, 152, 134);
+  position: relative;
+}
+
+.greeting {
+  color: rgb(121, 115, 81);
+  position: absolute;
+  font-family: "Billie Bonnie", cursive;
+  font-weight: normal;
+  font-size: 80px;
+  right: 8%;
+  top: 45px;
+  transform: rotate(9deg);
+}
+
+.images {
+  text-align: center;
+	padding: 100px 0 50px 0;
+}
+
+.city-image {
+	width: 100%;
+	max-width: 200px;
+  margin:  26px 2% 2px 2%;
+  padding: 3%;
+  background: rgb(239, 226, 223);
+}
+
+.footer-mobile,
+.footer-desktop {
+  background: rgb(171, 96, 79);
+  color: white;
+}
+
+.footer-mobile {
+	padding-bottom: 5px;
+}
+
+.footer-mobile ul {
+	padding-top: 14px;
+}
+
+.footer-mobile ul li {
+  padding: 4px 1% 5px 3%;
+}
+
+.footer-mobile ul li a,
+.footer-desktop ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-mobile p a,
+.footer-desktop p a {
+  color: white;
+	padding: 5px 5% 0 2%;
+  font-size: 30px;
+}
+
+.footer-mobile .social-media-icons {
+	margin-left: 74%;
+	margin-top: -8%;
+}
+
+.footer-desktop {
+	display: none;
+}
+
+/* ******************************* END HOME PAGE STYLE*************** */
+
+
+
+
+/* ************************* START HOME PAGE MEDIA QUERIES*************** /
+/*********************START MIN-WIDTH MEDIA QUERY 450PX *****************/
+@media (min-width: 450px) {
+	.footer-mobile .social-media-icons {
+		margin-left: 81%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 450PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 500PX *****************/
+@media (min-width: 500px) {
+	.border-left {
+	  right: 99%;
+	  top: 10px;
+	  width: 152px;
+	}
+
+	.border-right {
+		left: 99%;
+	  bottom: 21px;
+	  width: 152px;
+	}
+
+	.footer-mobile .social-media-icons {
+		margin-left: 85%;
+	  margin-top: -6%;
+	}
+
+	.footer-mobile p a,
+	.footer-desktop p a {
+		padding-right: 0;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 500PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 730PX *****************/
+@media (min-width: 730px) {
+	.menu, .hamburger, .cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+		background: rgb(142, 136, 108);
+		text-align: center;
+		padding: 1%;
+	}
+
+	.desktop-menu ul {
+		list-style: none;
+	}
+
+	.desktop-menu > ul > li {
+		display: inline-block;
+		background: rgb(142, 136, 108);
+		position: relative;
+		z-index: 9;
+	}
+
+	.desktop-menu ul li a {
+		color: white;
+		text-decoration: none;
+		padding: 8px 26px 8px 20px;
+		font-family: "Montserrat", sans-serif;
+		text-transform: uppercase;
+		display: block;
+		transition: .3s;
+	}
+
+	.desktop-menu ul li a:hover {
+		background: white;
+		color: #3c3c3c;
+		transition: .3s;
+	}
+
+	.sub-menu {
+		display: none;
+	}
+
+	.menu-item:hover .sub-menu {
+		display: block;
+		position: absolute;
+		top: 32px;
+		background: rgb(142, 136, 108);
+		width: 100%;
+	}
+
+	.heading {
+		padding: 2% 1% 2% 1%;
+	}
+
+	.border-left,
+	.border-right {
+  	width: 160px;
+	}
+
+	.border-left {
+	  right: 94%;
+	}
+
+	.border-right {
+	  left: 94%;
+	}
+
+	.mobile-block {
+		display: none;
+	}
+
+	.home-section {
+		min-height: 55vh;
+	}
+
+	.greeting {
+		right: 8%;
+		top: 80px;
+		transform: rotate(7deg);
+		font-size: 7rem;
+	}
+
+	.individual-image {
+		display: inline-block;
+		margin: 0 1%;
+	}
+
+	.city-image {
+		width: 90%;
+		max-width: 350px;
+		margin: 106px 2% 20px 2%;
+	}
+
+	.footer-mobile {
+		display: none;
+	}
+
+	.footer-desktop {
+		display: block;
+		position: relative;
+		padding-left: 1%;
+	}
+
+	.footer-desktop ul li {
+	  display: inline-block;
+	  padding: 40px 1% 10px 1%;
+	}
+
+	.footer-desktop p a {
+  	padding-left: 5px;
+	}
+
+	.footer-desktop .social-media-icons {
+  	position: absolute;
+  	right: 1%;
+  	bottom: 5px;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 730PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 1000PX *****************/
+@media (min-width: 1000px) {
+	.greeting {
+		animation: movement 6s forwards 1 linear;
+	}
+}
+
+@keyframes movement {
+	 0% {
+	  left: -300px;
+}
+	 100% {
+	  left: 652px;
+	 }
+}
+/*********************END MIN-WIDTH MEDIA QUERY 1000PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 1198PX *****************/
+@media (min-width: 1198px) {
+	.container {
+		max-width: 1198px;
+		margin: auto;
+	}
+
+	.home-body {
+		background-color: rgb(239, 226, 223);
+	}
+
+	.home-section {
+		min-height: 65vh;
+	}
+
+	.greeting {
+		right: 4%;
+		top: 62px;
+		transform: rotate(6deg);
+		font-size: 9rem;
+		animation: none;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 1198PX *****************/
+/* ************************* END HOME PAGE MEDIA QUERIES*************** /
