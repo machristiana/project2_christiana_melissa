@@ -243,6 +243,92 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 /* ******************************* END HOME PAGE STYLE*************** */
 
 
+/* ******************************* START ABOUT PAGE STYLE*************** */
+.body-about {
+	background-color: rgb(207, 152, 134);
+}
+
+.about-section{
+  background: rgb(228, 207, 195);
+}
+
+.about-me {
+  background: rgb(216, 179, 153);
+	margin-top: 3%;
+	padding: 20px 2% 5px 4%;
+}
+
+.about-greeting-1 {
+  color: rgb(121, 115, 81);
+  font-family: "Billie Bonnie", cursive;
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.about-greeting-2 {
+  color: rgb(121, 115, 81);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+	padding-bottom: 2%;
+}
+
+.summary,
+.summary2 {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.summary2 {
+  margin-top: 20px;
+}
+
+.closing {
+  color: rgb(121, 115, 81);
+  font-family: "Billie Bonnie", cursive;
+  font-size: 70px;
+  text-align: right;
+}
+
+.me-image {
+	width: 100%;
+  max-width: 230px;
+	padding: 2%;
+  background-color: rgb(122 115 81);
+  margin-top: 8%;
+  margin-left: 13%;
+}
+
+figcaption {
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	background-color: rgb(121, 115, 81);
+  padding: 1%;
+	margin: 4% 7% 0 7%;
+}
+
+.facts {
+	background-color: rgb(207, 152, 134);
+	padding: 2%;
+}
+
+.facts h2 {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	padding-bottom: 10px;
+}
+
+.facts ul {
+	padding-left: 10%;
+	font-family: "Fira Sans", sans-serif;
+	color: white;
+}
+/* ******************************* END ABOUT PAGE STYLE***************/
+
+
 
 
 /* ************************* START HOME PAGE MEDIA QUERIES*************** /
@@ -448,3 +534,111 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 /*********************END MIN-WIDTH MEDIA QUERY 1198PX *****************/
 /* ************************* END HOME PAGE MEDIA QUERIES*************** /
+
+
+/* ************************* START ABOUT PAGE MEDIA QUERIES*************** /
+/*********************START MIN-WIDTH MEDIA QUERY 420PX *****************/
+@media (min-width: 420px) {
+	.me-image {
+		margin-left: 22%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 420PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 520PX *****************/
+@media (min-width: 520px) {
+	.me-image {
+		margin-left: 27%;
+	}
+
+	figcaption {
+		margin-left: 17%;
+    margin-right: 17%;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 520PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 620PX *****************/
+@media (min-width: 620px) {
+	.me-image {
+		margin-left: 31%;
+	}
+
+	figcaption {
+		margin-left: 23%;
+    margin-right: 23%;
+	}
+}
+
+/*********************END MIN-WIDTH MEDIA QUERY 520PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 800PX *****************/
+@media (min-width: 800px) {
+	.about-container {
+		background-color: rgb(207, 152, 134);
+	}
+
+	.about-section{
+	  min-height: 81vh;
+		float: left;
+		width: 70%;
+	}
+
+	.me-image {
+		width: 100%;
+		max-width: 350px;
+		margin-left: 18%;
+	}
+
+	.about-me {
+		max-width: 756px;
+	}
+
+	figcaption {
+		width: 218px;
+		margin-left: 32%;
+	}
+
+	.facts {
+		float: right;
+		width: 26%;
+	}
+
+	.footer-desktop {
+		clear: both;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 800PX *****************/
+
+
+/*********************START MIN-WIDTH MEDIA QUERY 1120PX *****************/
+@media (min-width: 1120px) {
+	.body-about {
+		background-color: rgb(191, 185, 160);
+	}
+
+	.about-container {
+		max-width: 1120px;
+		margin: auto;
+		background-color: rgb(207, 152, 134);
+	}
+
+	.about-me {
+		display: flex;
+	}
+
+	.about-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-me {
+		display: flex;
+		flex-direction: column;
+	}
+}
+/*********************END MIN-WIDTH MEDIA QUERY 1120PX *****************/
+/************************** END ABOUT PAGE MEDIA QUERIES***************/
